@@ -7,17 +7,13 @@ type Props = {
 
 export default function ListItem({post}: Props) {
         const {id, title, date} = post
-        const formattedDate = getFormattedDate(date)
+        // const formattedDate = getFormattedDate(date)
 
     return (
-        <li>
-            <Link href={`/posts/${id}`}>
-                <a>
-                    <h2>{title}</h2>
-                    <br />
-                    <p>{formattedDate}</p>
-                </a>
-            </Link>
-        </li>
+        <ul>
+            <Link href={`/posts/${id}`}>{title}</Link>
+            <br />
+            {/* <p>{formattedDate}</p> */}
+        </ul>
   )
 }

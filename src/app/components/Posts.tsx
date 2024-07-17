@@ -7,7 +7,7 @@ export default function Posts () {
 
      return (
         <section>
-            <h2></h2>
+            <h2>Blog</h2>
             <ul>
                 {posts.map(post =>(
                     <ListItem key={post.id} post={post}/>
