@@ -1,15 +1,18 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+
 import Posts from "./components/Posts";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main >
         <h1>Food Blog</h1>
         <p>Welcome to my food blog!</p>
 
         
             <Posts />
+            <footer>
+                <p>© 2024 Food Blog</p>
+            </footer>
     </main>
   );
 }
